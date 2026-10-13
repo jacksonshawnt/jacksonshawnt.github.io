@@ -17,3 +17,18 @@
 .work-sample{margin:24px 0 22px}.sample-image-link{display:block;background:#fff;border:1px solid var(--line);line-height:0}.sample-image-link:hover{outline:2px solid var(--gold);outline-offset:3px}.work-sample img{display:block;width:100%;height:auto}.work-sample figcaption{font-size:12px;line-height:1.8;color:var(--muted);margin-top:14px}.work-sample figcaption a{display:inline-block;min-height:30px}.sample-square{max-width:580px}.flyer-pages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.case-content #work-sample{scroll-margin-top:110px}
 @media(max-width:580px){.flyer-pages{grid-template-columns:1fr;gap:22px}}
 @media print{.case-sample-jump{display:none}.work-sample{break-inside:avoid}.work-sample figcaption{font-size:10pt}.sample-square{max-width:400px}}
+
+/* Campaign evidence and a compact three-metric homepage. */
+.impact-grid{grid-template-columns:repeat(3,minmax(0,1fr))}.impact-label{max-width:260px}
+.supporting-work{padding:30px 0 0;max-width:740px}.supporting-work .eyebrow{margin-bottom:12px}.supporting-work h3{font-size:27px;margin-bottom:12px}.supporting-work p{font-size:14px;color:var(--muted);margin-bottom:12px}.supporting-work .text-link{display:inline-flex;align-items:center;min-height:44px}
+.case-hero{padding:44px 0 46px}.case-hero .breadcrumb{margin-bottom:26px}.case-hero h1{font-size:clamp(40px,4.6vw,62px);margin-bottom:20px}.case-hero .case-lead{margin-bottom:16px}.case-meta{margin-top:22px}
+.case-content .sample-note,.case-content .metric-note{font-size:12px;line-height:1.75}.sample-note{margin-top:22px}
+.case-table{width:100%;border-collapse:collapse;margin:22px 0;font-size:14px}.case-table th,.case-table td{padding:12px 14px;text-align:left;border-bottom:1px solid var(--line);vertical-align:top}.case-table thead{background:#ebe8df}.case-table tbody th{font-weight:500}.case-table tbody td{font-variant-numeric:tabular-nums;white-space:nowrap}
+@media(max-width:780px){.impact-grid{grid-template-columns:1fr}.impact-item,.impact-item:first-child,.impact-item:nth-child(2),.impact-item:nth-child(3){border-right:0;border-bottom:1px solid var(--line);padding:22px 0}.impact-item:last-child{border-bottom:0}.impact-label{max-width:100%}.case-hero{padding:34px 0}.case-hero h1{font-size:clamp(38px,7vw,50px)}}
+@media(max-width:580px){.case-table th,.case-table td{padding:10px 8px}}
+@media print{.case-hero{padding:20px 0}.supporting-work{break-inside:avoid}}
+
+/* Four phase examples, readable at natural image proportions. */
+.phase-list{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:38px 28px;margin-top:30px}.phase-card{border-top:2px solid var(--gold);padding-top:20px;min-width:0}.case-content .phase-label{font-size:11px;letter-spacing:.12em;text-transform:uppercase;color:var(--gold);font-weight:700;margin-bottom:12px}.phase-card h3{font-size:25px;line-height:1.2;margin-bottom:14px}.case-content .phase-copy{font-size:14px;line-height:1.8;margin-bottom:20px}.phase-sample{margin:0}.phase-image-link{width:min(100%,var(--sample-native-width));margin-inline:auto}.phase-sample figcaption{margin-top:12px}
+@media(max-width:620px){.phase-list{grid-template-columns:1fr;gap:32px}.phase-card h3{font-size:27px}}
+@media print{.phase-list{display:block}.phase-card{break-inside:avoid;margin-bottom:26px}.phase-sample{max-width:340px}.phase-sample figcaption a{display:none}}
