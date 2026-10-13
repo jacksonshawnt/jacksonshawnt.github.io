@@ -7,3 +7,13 @@
 @media(max-width:460px){.brand-mark{width:33px;height:33px}.brand{gap:9px}.menu-toggle{font-size:12px}.hero h1{font-size:46px}.hero .actions{align-items:stretch}.hero .button{flex:1;gap:10px;padding:13px 16px}.work-card{grid-template-columns:1fr}.work-visual{height:125px;display:grid;grid-template-columns:1fr 1fr;align-items:center;gap:8px}.work-visual strong{grid-column:2;grid-row:1 / 3;justify-self:end;font-size:54px}.work-visual span:last-child{grid-column:1}.work-arrow{grid-column:1}.work-tags{gap:5px}.experience-row{grid-template-columns:1fr}.experience-summary{grid-column:1}.principles{gap:20px}.contact-email{font-size:17px}.impact-label{font-size:11px}.impact-number{font-size:34px}.case-content h2{font-size:29px}}
 @media(prefers-reduced-motion:reduce){html{scroll-behavior:auto}*,*:before,*:after{transition:none!important;animation:none!important}}
 @media print{.site-header,.actions,.case-next,.copy-email,.skip-link{display:none}body{background:white;font-size:12pt}.container{width:100%}.hero,.section,.case-body,.case-hero{padding:20px 0}.hero-grid,.about-grid,.contact-grid,.case-body{display:block}.hero-panel{display:none}.capabilities,.case-hero{background:white;color:black}.capabilities p,.case-lead,.breadcrumb,.case-meta{color:#333}.work-card,.experience-row,.cap-item{break-inside:avoid}.section-heading{margin-bottom:20px}h1{font-size:38pt}h2{font-size:26pt}.work-visual{height:130px}.contact-section{background:white}.site-footer{border-top:1px solid #ccc}.case-meta span{color:#333}}
+
+/* Clear, accessible links from the approach section to project evidence. */
+.cap-item .proof-link{display:inline-flex;align-items:center;min-height:44px;text-underline-offset:5px}
+.cap-item .proof-link:hover{color:var(--gold-light)}
+
+/* Real work samples: original artwork, readable captions, and full-size links. */
+.case-sample-jump{display:inline-flex;align-items:center;min-height:44px;font-size:12px;color:var(--gold-light);margin-top:8px}
+.work-sample{margin:24px 0 22px}.sample-image-link{display:block;background:#fff;border:1px solid var(--line);line-height:0}.sample-image-link:hover{outline:2px solid var(--gold);outline-offset:3px}.work-sample img{display:block;width:100%;height:auto}.work-sample figcaption{font-size:12px;line-height:1.8;color:var(--muted);margin-top:14px}.work-sample figcaption a{display:inline-block;min-height:30px}.sample-square{max-width:580px}.flyer-pages{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}.case-content #work-sample{scroll-margin-top:110px}
+@media(max-width:580px){.flyer-pages{grid-template-columns:1fr;gap:22px}}
+@media print{.case-sample-jump{display:none}.work-sample{break-inside:avoid}.work-sample figcaption{font-size:10pt}.sample-square{max-width:400px}}
