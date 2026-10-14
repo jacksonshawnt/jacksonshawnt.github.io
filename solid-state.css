@@ -35,7 +35,12 @@ h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.12;letter-spacin
 body.solid-home,body.solid-case{background:var(--forest);background-image:none}
 .site-header{border-bottom:0;background:#27271c}
 /* The photograph and full-height tint share the same header box. */
-.solid-home #banner,.solid-case .case-hero{position:relative;isolation:isolate;clip-path:none;background:#27271c url('assets/images/smoky-mountains.jpg') center 42% / cover no-repeat fixed;border:0;margin:0}
+.solid-home #banner,.solid-case .case-hero{position:relative;isolation:isolate;clip-path:none;background:#27271c url('assets/images/smoky-mountains.jpg') center 42% / cover no-repeat scroll;border:0;margin:0}
+/* Use a normal header background on touch devices. Desktop viewport emulation
+   does not reproduce mobile WebKit's fixed-background cropping behavior. */
+@media(min-width:1051px) and (hover:hover) and (pointer:fine) and (prefers-reduced-motion:no-preference){.solid-home #banner,.solid-case .case-hero{background-attachment:fixed}}
+/* iPadOS can expose a desktop-sized viewport and trackpad. */
+@supports(-webkit-touch-callout:none){.solid-home #banner,.solid-case .case-hero{background-attachment:scroll}}
 .solid-home #banner::before,.solid-case .case-hero::before{content:'';position:absolute;inset:0;z-index:0;pointer-events:none;background:linear-gradient(90deg,rgba(30,31,20,.92) 0%,rgba(30,31,20,.82) 65%,rgba(30,31,20,.63) 100%)}
 .solid-home #banner::after,.solid-case .case-hero::after{content:none;display:none}
 .solid-home #banner>.inner,.solid-case .case-hero>.container{position:relative;z-index:1}
