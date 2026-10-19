@@ -197,3 +197,10 @@ body.solid-home,body.solid-case{background:var(--forest);background-image:none}
 .solid-home :focus-visible,.solid-case .case-hero :focus-visible{outline-color:var(--bronze-text)}
 .solid-home .about-section :focus-visible{outline-color:var(--bronze)}
 @media(forced-colors:active){.solid-home :focus-visible,.solid-home .about-section :focus-visible,.solid-case .case-hero :focus-visible{outline-color:Highlight}}
+
+/* About portrait: restrained editorial image on the existing cream surface. */
+.about-portrait{width:min(100%,340px);margin:30px 0 0;border:1px solid var(--bronze-burnished);border-radius:2px;overflow:hidden;background:var(--bone)}
+.about-portrait img{display:block;width:100%;height:auto;aspect-ratio:1122 / 1402;object-fit:cover}
+@media(max-width:780px){.about-portrait{width:min(100%,320px);margin-top:25px}}
+@media print{.about-portrait{width:150px;margin-top:15px;break-inside:avoid;box-shadow:none}}
+@media(forced-colors:active){.about-portrait{border-color:CanvasText}}
