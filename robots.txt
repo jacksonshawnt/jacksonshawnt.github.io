@@ -1,2 +1,4 @@
 User-agent: *
 Allow: /
+
+Sitemap: https://jacksonshawnt.github.io/sitemap.xml
